@@ -26,6 +26,10 @@ const config = {
       },
     },
     extend: {
+      gridTemplateColumns: {
+        // Ajout d'une configuration de grille de 12 colonnes
+        '12': 'repeat(12, minmax(0, 1fr))',
+      },
       colors: {
         black: {
           DEFAULT: "#000",
