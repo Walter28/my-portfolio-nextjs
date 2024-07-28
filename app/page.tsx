@@ -6,6 +6,8 @@ import RecentProjects from '@/components/RecentProjects'
 import { FaHome } from "react-icons/fa";
 import { navItems } from "@/data";
 import Clients from "@/components/Clients";
+import Experiences from "@/components/Experiences"
+import Approach from "@/components/Approach"
 
 export default function Home() {
   return (
@@ -13,18 +15,13 @@ export default function Home() {
     items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">
 
-        <FloatingNav 
-        navItems={navItems}
-        />
-
+        <FloatingNav navItems={navItems}/>
         <Hero />
-
         <Grid />
-
         <RecentProjects />
-
         <Clients />
-
+        <Experiences />
+        <Approach />
       </div>
     </main>
   );
